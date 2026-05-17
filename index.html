@@ -564,21 +564,21 @@ footer{
             <span class="chip-accent">Per-feature AI pipelines</span>
             <span class="chip-accent">Distributed job queue</span>
             <span class="chip-accent">Apple IAP backend</span>
-            <span class="chip-accent">WhatsApp keyboard</span>
+            <span class="chip-accent">iOS keyboard extension</span>
             <span class="chip-accent">UGC — image &amp; video</span>
             <span class="chip-accent">Virtual clothes try-on</span>
           </div>
           <p class="card-desc-sm">
-            Integrated RunPod (InstantID/IP-Adapter), Kling AI, RunwayML, Veo, and ElevenLabs into chained pipelines — with a Redis job queue handling retry, deduplication, and locking so no generation task loses state. Full GCP infra managed with Terraform and deployed via Cloud Build on every commit.
+            Integrated Kling AI, Google Veo, and ElevenLabs into chained generation pipelines — with a Redis job queue handling retry, deduplication, and locking so no generation task loses state. Full GCP infrastructure managed with Terraform and deployed via Cloud Build on every commit.
           </p>
         </div>
       </div>
 
-      <!-- 2. AI Email Sequencing — wide -->
+      <!-- 2. Email Sequencing — wide -->
       <div class="card wide">
         <div>
           <div class="badge active"><span class="badge-dot"></span>Production</div>
-          <h3 class="card-title">AI Email Sequencing</h3>
+          <h3 class="card-title">Email Sequencing</h3>
           <p class="card-desc">Multi-tenant B2B outreach platform with a 3-process distributed architecture — API server, background worker, and React Native mobile app. Handles the full campaign lifecycle: AI-generated per-contact email sequences, scheduled delivery, open tracking, and dual-mode reply detection via IMAP and Gmail Pub/Sub.</p>
           <div class="tags">
             <span class="tag">LLM APIs</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">TypeScript</span><span class="tag">React Native</span>
@@ -586,10 +586,10 @@ footer{
         </div>
         <div>
           <div class="card-metrics">
-            <span class="chip-accent">90% less manual outreach effort</span>
-            <span class="chip-accent">Full idempotency &amp; retry logic</span>
-            <span class="chip-accent">Automated GCP deployment</span>
-            <span class="chip-accent">LLM-driven personalisation</span>
+            <span class="chip-accent">Multi-tenant architecture</span>
+            <span class="chip-accent">7 LLM providers supported</span>
+            <span class="chip-accent">PostgreSQL job queue</span>
+            <span class="chip-accent">AI persona + enrichment engine</span>
           </div>
           <p class="card-desc-sm">Built a PostgreSQL-backed job queue with idempotency keys, retry logic, and per-step scheduling — no external queue dependency, no duplicate sends. Deployed as two separate PM2 processes (API + worker) with a React Native client via Expo EAS.</p>
         </div>
@@ -705,7 +705,7 @@ footer{
             <li>Built a distributed job system with retry, locking, and idempotency — AI tasks never lose state under concurrent load</li>
             <li>Implemented full CI/CD on GCP (Cloud Build + Cloud Run) with Infrastructure as Code — deploy on every commit</li>
             <li>Built Apple IAP backend managing subscriptions, free trials, and consumables via JWT-secured webhooks</li>
-            <li>Developed AI email sequencing system using LLM APIs, cutting manual outreach effort by 90%</li>
+            <li>Developed Email Sequencing system using LLM APIs, cutting manual outreach effort by 90%</li>
           </ul>
         </div>
       </div>
