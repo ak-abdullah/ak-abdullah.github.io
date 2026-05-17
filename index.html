@@ -551,7 +551,7 @@ footer{
           <div class="badge active"><span class="badge-dot"></span>Production</div>
           <h3 class="card-title">Selfimoji</h3>
           <p class="card-desc">
-            AI image &amp; video generation platform for iOS. Users generate personalised photos with preset backgrounds, create video ads, try on clothes virtually, and share via a custom WhatsApp keyboard — all powered by per-feature AI pipelines I built from scratch.
+            AI image &amp; video generation platform for iOS. Users generate personalised photos and videos across different expressions, styles, and scenarios, create video ads, try on clothes virtually, and share via a native iOS keyboard extension — usable in iMessage, WhatsApp, or any messaging app — all powered by per-feature AI pipelines I built from scratch.
           </p>
           <div class="tags">
             <span class="tag">FastAPI</span><span class="tag">Redis</span><span class="tag">GCP Cloud Run</span>
@@ -569,7 +569,7 @@ footer{
             <span class="chip-accent">Virtual clothes try-on</span>
           </div>
           <p class="card-desc-sm">
-            Designed a distributed job system with retry logic, idempotency, and locking so concurrent AI generation tasks never lose state. Handled full GCP deployment with IaC and automated CI/CD from day one.
+            Integrated RunPod (InstantID/IP-Adapter), Kling AI, RunwayML, Veo, and ElevenLabs into chained pipelines — with a Redis job queue handling retry, deduplication, and locking so no generation task loses state. Full GCP infra managed with Terraform and deployed via Cloud Build on every commit.
           </p>
         </div>
       </div>
@@ -579,9 +579,9 @@ footer{
         <div>
           <div class="badge active"><span class="badge-dot"></span>Production</div>
           <h3 class="card-title">AI Email Sequencing</h3>
-          <p class="card-desc">LLM-powered outreach system deployed in production. Reduced manual email effort by 90%. Handles sequencing logic, personalisation, and delivery — all driven by LLM APIs.</p>
+          <p class="card-desc">Multi-tenant B2B outreach platform with a 3-process distributed architecture — API server, background worker, and React Native mobile app. Handles the full campaign lifecycle: AI-generated per-contact email sequences, scheduled delivery, open tracking, and dual-mode reply detection via IMAP and Gmail Pub/Sub.</p>
           <div class="tags">
-            <span class="tag">LLM APIs</span><span class="tag">Node.js</span><span class="tag">GCP Cloud Run</span><span class="tag">CI/CD</span><span class="tag">Redis</span>
+            <span class="tag">LLM APIs</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">TypeScript</span><span class="tag">React Native</span>
           </div>
         </div>
         <div>
@@ -591,7 +591,7 @@ footer{
             <span class="chip-accent">Automated GCP deployment</span>
             <span class="chip-accent">LLM-driven personalisation</span>
           </div>
-          <p class="card-desc-sm">Built with full idempotency, retry logic, and automated CI/CD on GCP Cloud Run — handles failures gracefully and never sends duplicate emails under load.</p>
+          <p class="card-desc-sm">Built a PostgreSQL-backed job queue with idempotency keys, retry logic, and per-step scheduling — no external queue dependency, no duplicate sends. Deployed as two separate PM2 processes (API + worker) with a React Native client via Expo EAS.</p>
         </div>
       </div>
 
