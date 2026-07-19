@@ -590,7 +590,7 @@ footer{
           <div class="card-metrics">
             <span class="chip-accent">25 REST endpoints shipped</span>
             <span class="chip-accent">3-layer tenant isolation</span>
-            <span class="chip-accent">22/22 isolation checks passing</span>
+            <span class="chip-accent">Zero cross-tenant data leaks</span>
             <span class="chip-accent">Zero downtime cutover</span>
           </div>
           <p class="card-desc-sm">
@@ -619,6 +619,31 @@ footer{
         </div>
       </div>
 
+      <!-- 4. Adaptive Multi-Agent Orchestration Engine — wide -->
+      <div class="card wide">
+        <div>
+          <div class="badge active"><span class="badge-dot"></span>Shipped</div>
+          <h3 class="card-title">Adaptive Multi-Agent Orchestration Engine</h3>
+          <p class="card-desc">
+            Six agent orchestration system built for a client, where each agent owns a distinct stage of a pipeline: discovery, scoring, action, and adaptive tuning. Agents coordinate through a shared Redis backed state layer instead of running as isolated jobs, so the system behaves as one coherent process across independent workers.
+          </p>
+          <div class="tags">
+            <span class="tag">FastAPI</span><span class="tag">Redis</span><span class="tag">Docker</span>
+            <span class="tag">Python</span><span class="tag">Multi-agent Systems</span><span class="tag">Agentic AI Development</span>
+          </div>
+        </div>
+        <div>
+          <div class="card-metrics">
+            <span class="chip-accent">6 coordinated agents</span>
+            <span class="chip-accent">Self-tuning feedback loop</span>
+            <span class="chip-accent">Zero downtime restarts</span>
+          </div>
+          <p class="card-desc-sm">
+            Built the core FastAPI microservice every agent routes through, plus the feedback mechanism that closes the loop end to end: one agent evaluates the prior cycle's performance and rewrites the configuration the next cycle runs on. Client and domain details are confidential under NDA.
+          </p>
+        </div>
+      </div>
+      
       <!-- 3. PhysioGo -->
       <a class="card" href="https://github.com/ak-abdullah/FYP-Demo" target="_blank">
         <div class="badge active"><span class="badge-dot"></span>Shipped</div>
