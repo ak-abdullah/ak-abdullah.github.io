@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abdullah Khalid — AI Engineer</title>
-<meta name="description" content="Abdullah Khalid — AI Engineer building production LLM pipelines, distributed backends, and cloud deployments. Based in Pakistan, open to remote work.">
+<meta name="description" content="Abdullah Khalid, AI Engineer building AI voice agents, automations and the backend systems behind them. Based in Pakistan, open to remote work.">
 <meta property="og:title" content="Abdullah Khalid — AI Engineer">
-<meta property="og:description" content="Building production AI systems — LLM pipelines, FastAPI backends, GCP deployments.">
+<meta property="og:description" content="AI voice agents, automations and the backend systems behind them.">
 <meta name="theme-color" content="#F7F3EE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -514,9 +514,9 @@ footer{
       <h1 class="hero-name">Abdullah<br><em>Khalid</em></h1>
       <p class="hero-role">AI Engineer</p>
       <p class="hero-tagline">
-        I build <strong>production AI systems</strong> — LLM pipelines, distributed backends,
-        real deployments on GCP. Not notebooks. Not demos.
-        <strong>Things that run under load and stay up.</strong>
+        I build <strong>AI voice agents and automations</strong>, and the backend systems behind them.
+        Not notebooks. Not demos.
+        <strong>Things that run with real customers and stay up.</strong>
       </p>
       <div class="hero-actions">
         <a href="#work" class="btn-primary">View my work</a>
@@ -545,31 +545,53 @@ footer{
 
     <div class="project-grid reveal">
 
-      <!-- 1. AI Media Generation Platform — wide -->
+      <!-- 1. AI Voice Agent for Property Showings — wide -->
       <div class="card wide">
         <div>
-          <div class="badge active"><span class="badge-dot"></span>Production</div>
-          <h3 class="card-title">AI Media Generation Platform</h3>
+          <div class="badge active"><span class="badge-dot"></span>Live</div>
+          <h3 class="card-title">AI Voice Agent for Property Showings</h3>
           <p class="card-desc">
-            AI image &amp; video generation platform for iOS. Users generate personalised photos and videos across different expressions, styles, and scenarios, create video ads, try on clothes virtually, and share via a native iOS keyboard extension — usable in iMessage, WhatsApp, or any messaging app — all powered by per-feature AI pipelines I built from scratch.
+            Inbound phone agent for a US property management company. When a renter calls, it answers, helps them pick a property from live listings, checks the team's real calendar and books the showing in GoHighLevel. It reads the time back and waits for a yes before booking.
           </p>
           <div class="tags">
-            <span class="tag">FastAPI</span><span class="tag">Redis</span><span class="tag">GCP Cloud Run</span>
-            <span class="tag">Infrastructure as Code</span><span class="tag">Swift / iOS</span>
-            <span class="tag">CI/CD</span><span class="tag">LLM Pipelines</span><span class="tag">Job Queue System</span>
+            <span class="tag">Retell AI</span><span class="tag">GoHighLevel API</span><span class="tag">Slack Webhooks</span>
+            <span class="tag">JavaScript</span><span class="tag">Prompt Engineering</span>
           </div>
         </div>
         <div>
           <div class="card-metrics">
-            <span class="chip-accent">Per-feature AI pipelines</span>
-            <span class="chip-accent">Distributed job queue</span>
-            <span class="chip-accent">Apple IAP backend</span>
-            <span class="chip-accent">iOS keyboard extension</span>
-            <span class="chip-accent">UGC — image &amp; video</span>
-            <span class="chip-accent">Virtual clothes try-on</span>
+            <span class="chip-accent">Answers calls 24/7</span>
+            <span class="chip-accent">Real calendar availability</span>
+            <span class="chip-accent">Books showings in the CRM</span>
+            <span class="chip-accent">Slack alerts for the team</span>
           </div>
           <p class="card-desc-sm">
-            Integrated Kling AI, Google Veo, and ElevenLabs into chained generation pipelines — with a Redis job queue handling retry, deduplication, and locking so no generation task loses state. Full GCP infrastructure managed with Terraform and deployed via Cloud Build on every commit.
+            Captures phone numbers with a keypad fallback and confirms emails by spelling. The team gets Slack alerts for booked showings, urgent callbacks and callers who hang up before booking. Tuned against real call logs until it handled interruptions and callers who change their mind.
+          </p>
+        </div>
+      </div>
+      <!-- 2. AI Media Generation App — wide -->
+      <div class="card wide">
+        <div>
+          <div class="badge active"><span class="badge-dot"></span>Production</div>
+          <h3 class="card-title">AI Media Generation App</h3>
+          <p class="card-desc">
+            Consumer AI app that generates personalised images and videos. I work across the whole app, from early build through production: backend, AI features, frontend and cloud setup.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Redis</span>
+            <span class="tag">GCP</span><span class="tag">Swift / iOS</span>
+          </div>
+        </div>
+        <div>
+          <div class="card-metrics">
+            <span class="chip-accent">Full stack</span>
+            <span class="chip-accent">Backend + AI features</span>
+            <span class="chip-accent">Cloud deployment</span>
+            <span class="chip-accent">In production</span>
+          </div>
+          <p class="card-desc-sm">
+            Client details are confidential. Happy to walk through my role on a call.
           </p>
         </div>
       </div>
@@ -745,15 +767,25 @@ footer{
     <h2 class="section-title reveal">Where I've worked</h2>
     <div class="exp-list">
       <div class="exp reveal">
+        <div><div class="exp-date">Sep 2026 — Present</div></div>
+        <div>
+          <div class="exp-co">Self-employed</div>
+          <div class="exp-role">AI Engineer (Freelance)</div>
+          <ul class="exp-pts">
+            <li>Built an inbound AI voice agent for a property management company that answers renter calls and books showings into GoHighLevel</li>
+            <li>Full stack work on a consumer AI app: backend, AI features, frontend and cloud setup</li>
+            <li>CRM automations connecting client websites to GoHighLevel, with follow-up reminders and team alerts</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp reveal">
         <div><div class="exp-date">Dec 2025 — Aug 2026</div></div>
         <div>
           <div class="exp-co">CoreX Tech</div>
           <div class="exp-role">AI Engineer</div>
           <ul class="exp-pts">
-            <li>Designed and deployed a scalable FastAPI backend with auth, webhooks, and async workflows via Redis</li>
-            <li>Built a distributed job system with retry, locking, and idempotency — AI tasks never lose state under concurrent load</li>
-            <li>Implemented full CI/CD on GCP (Cloud Build + Cloud Run) with Infrastructure as Code — deploy on every commit</li>
-            <li>Built Apple IAP backend managing subscriptions, free trials, and consumables via JWT-secured webhooks</li>
+            <li>Worked across the whole stack of a consumer AI app that generates personalised images and videos: backend, AI features, frontend and cloud setup</li>
+            <li>Built and deployed the backend with Python, FastAPI and Redis on GCP</li>
             <li>Developed Email Sequencing system using LLM APIs, cutting manual outreach effort by 90%</li>
           </ul>
         </div>
